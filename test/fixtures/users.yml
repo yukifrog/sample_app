@@ -3,37 +3,37 @@
 michael:
   name: Michael Example
   email: michael@example.com
-  password_digest: <%= User.digest('password') %>
+  password_digest: $2a$04$qJbFRubiafeqSQIvNX3fuOvPiU7GhXQnuwzDSjmCJM3u9SLon2Z.q
   admin: true
   activated: true
-  activated_at: <%= Time.zone.now %>
+  activated_at: 2016-01-01 00:00:00
 
 archer:
   name: Sterling Archer
   email: duchess@example.gov
-  password_digest: <%= User.digest('password') %>
+  password_digest: $2a$04$qJbFRubiafeqSQIvNX3fuOvPiU7GhXQnuwzDSjmCJM3u9SLon2Z.q
   activated: true
-  activated_at: <%= Time.zone.now %>
+  activated_at: 2016-01-01 00:00:00
 
 lana:
   name: Lana Kane
   email: hands@example.gov
-  password_digest: <%= User.digest('password') %>
+  password_digest: $2a$04$qJbFRubiafeqSQIvNX3fuOvPiU7GhXQnuwzDSjmCJM3u9SLon2Z.q
   activated: true
-  activated_at: <%= Time.zone.now %>
+  activated_at: 2016-01-01 00:00:00
 
 mallory:
   name: Mallory Archer
   email: boss@example.gov
-  password_digest: <%= User.digest('password') %>
+  password_digest: $2a$04$qJbFRubiafeqSQIvNX3fuOvPiU7GhXQnuwzDSjmCJM3u9SLon2Z.q
   activated: true
-  activated_at: <%= Time.zone.now %>
+  activated_at: 2016-01-01 00:00:00
 
 <% 30.times do |n| %>
 user_<%= n %>:
   name:  <%= "User #{n}" %>
   email: <%= "user-#{n}@example.com" %>
-  password_digest: <%= User.digest('password') %>
+  password_digest: $2a$04$qJbFRubiafeqSQIvNX3fuOvPiU7GhXQnuwzDSjmCJM3u9SLon2Z.q
   activated: true
-  activated_at: <%= Time.zone.now %>
+  activated_at: 2016-01-01 00:00:00
 <% end %>
